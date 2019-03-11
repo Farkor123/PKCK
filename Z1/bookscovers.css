@@ -1,0 +1,23 @@
+#Hobbit {
+  background-image: url("./images/hobbit.jpg");
+}
+#Hobbit:hover {
+  background: #70C1B3;
+  transition: 0.8s;
+}
+
+#Silmarillion {
+  background-image: url("./images/silmarillion.jpg");
+}
+#Silmarillion:hover {
+  background: #70C1B3;
+  transition: 0.8s;
+}
+
+#UnfinishedTales {
+  background-image: url("./images/unfinishedtales.jpg");
+}
+#UnfinishedTales:hover {
+  background: #70C1B3;
+  transition: 0.8s;
+}

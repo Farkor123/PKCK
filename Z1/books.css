@@ -1,11 +1,15 @@
 books {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
-  background-color: #1f1f1f;
+  background-color: #247BA0;
   color: #ffffff;
-  position: absolute;
+  font-family: sans-serif;
 }
 
 technicalData {
+  color: #FF1654;
+  font-size: 12px;
   display: grid;
   position: fixed;
   left: 0;
@@ -27,4 +31,48 @@ lastModificationDate {
   position: fixed;
   right: 0;
   bottom: 0;
+}
+
+writersList {
+  display: none;
+}
+
+publishersList {
+  display: none;
+}
+
+booksList {
+  position: absolute;
+  color: #1f1f1f;
+  text-align: center;
+  left: 30%;
+  transform: translateX(-20%);
+}
+
+book {
+  display: inline-grid;
+  width: 180px;
+  margin: 10px;
+  height: 180px;
+  background: #000
+}
+
+book {
+  display: inline-grid;
+  width: 300px;
+  margin: 10px;
+  height: 300px;
+  transition: 0.8s;
+  font-size: 0px;
+}
+
+book:hover {
+  display: inline-grid;
+  background: #70C1B3;
+  background-image: linear-gradient(red, yellow, green);
+  width: 300px;
+  margin: 10px;
+  height: 300px;
+  transition: 0.8s;
+  font-size: 16px;
 }

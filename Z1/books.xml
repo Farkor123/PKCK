@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
 <?xml-stylesheet type='text/css' href='books.css'?>
+<?xml-stylesheet type='text/css' href='bookscovers.css'?>
 <!--<!DOCTYPE albums SYSTEM 'books.dtd'>-->
 
 <books>
@@ -162,14 +163,6 @@
 			<bookIsbn>9780747591054</bookIsbn>
 			<bookDateOfPublish>2007</bookDateOfPublish>
 			<bookPrice>20.07</bookPrice>
-		</book>
-		<book id=''>
-			<writer id=''></writer>
-			<publisher id=''></publisher>
-			<bookTitle></bookTitle>
-			<bookIsbn></bookIsbn>
-			<bookDateOfPublish></bookDateOfPublish>
-			<bookPrice></bookPrice>
 		</book>
 	</booksList>
 </books>
