@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<?xml-stylesheet type="text/css" href="books.css"?>
-<!--<!DOCTYPE albums SYSTEM "definitions.dtd">-->
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<?xml-stylesheet type='text/css' href='books.css'?>
+<!--<!DOCTYPE albums SYSTEM 'books.dtd'>-->
 
 <books>
 	<!--AUTHORS-->
@@ -13,10 +13,10 @@
 		<author id='PLisik'>
 			<authorName>Patryk</authorName>
 			<authorSurname>Lisik</authorSurname>
-			<authorIndexNumber>2137XD</authorIndexNumber>
+			<authorIndexNumber>210254</authorIndexNumber>
 		</author>
 		<lastModificationDate>
-			<lastModificationDay>08</lastModificationDay>
+			<lastModificationDay>11</lastModificationDay>
 			<lastModificationMonth>03</lastModificationMonth>
 			<lastModificationYear>2019</lastModificationYear>
 		</lastModificationDate>
@@ -33,14 +33,28 @@
 			<writerSurname>Lovecraft</writerSurname>
 			<writerBirthYear>1890</writerBirthYear>
 		</writer>
+		<writer id='Rowling'>
+			<writerName>J.K.</writerName>
+			<writerSurname>Rowling</writerSurname>
+			<writerBirthYear>1965</writerBirthYear>
+		</writer>
 	</writersList>
 	<!--PUBLISHERS-->
 	<publishersList>
-		<publisher id="AllenUnwin">
+		<publisher id='AllenUnwin'>
 			<publisherName>Allen &amp; Unwin</publisherName>
 		</publisher>
-		<publisher id="WeirdTales">
+		<publisher id='WeirdTales'>
 			<publisherName>Weird Tales</publisherName>
+		</publisher>
+		<publisher id='VPC'>
+			<publisherName>Visionary Publishing Company</publisherName>
+		</publisher>
+		<publisher id='AH'>
+			<publisherName>Arkham House</publisherName>
+		</publisher>
+		<publisher id='BP'>
+			<publisherName>Bloomsbury Publishing</publisherName>
 		</publisher>
 	</publishersList>
 	<!--BOOKS-->
@@ -77,25 +91,81 @@
 			<bookDateOfPublish>1928</bookDateOfPublish>
 			<bookPrice>45.90</bookPrice>
 		</book>
-		<book id='MountainsOfMadness'>
+		<book id='Shadow'>
 			<writer id='Lovecraft'></writer>
-			<publisher id=""></publisher>
-			<bookTitle>At the Mountains of Madness</bookTitle>
-			<bookIsbn></bookIsbn>
+			<publisher id='VPC'></publisher>
+			<bookTitle>The Shadow over Innsmouth</bookTitle>
+			<bookIsbn>9788577151875</bookIsbn>
 			<bookDateOfPublish>1936</bookDateOfPublish>
-			<bookPrice></bookPrice>
+			<bookPrice>33.20</bookPrice>
+		</book>
+		<book id='Kadath'>
+			<writer id='Lovecraft'></writer>
+			<publisher id='AH'></publisher>
+			<bookTitle>The Dream-Quest of Unknown Kadath</bookTitle>
+			<bookIsbn>9781539162742</bookIsbn>
+			<bookDateOfPublish>1943</bookDateOfPublish>
+			<bookPrice>26.95</bookPrice>
+		</book>
+		<book id='HPPS'>
+			<writer id='Rowling'></writer>
+			<publisher id='BP'></publisher>
+			<bookTitle>Harry Potter and the Philosopher's Stone</bookTitle>
+			<bookIsbn>9780747532743</bookIsbn>
+			<bookDateOfPublish>1997</bookDateOfPublish>
+			<bookPrice>3.43</bookPrice>
+		</book>
+		<book id='HPCS'>
+			<writer id='Rowling'></writer>
+			<publisher id='BP'></publisher>
+			<bookTitle>Harry Potter and the Chamber of Secrets</bookTitle>
+			<bookIsbn>9780747538493</bookIsbn>
+			<bookDateOfPublish>1997</bookDateOfPublish>
+			<bookPrice>101.49</bookPrice>
+		</book>
+		<book id='HPPA'>
+			<writer id='Rowling'></writer>
+			<publisher id='BP'></publisher>
+			<bookTitle>Harry Potter and the Prisoner of Azkaban</bookTitle>
+			<bookIsbn>9780747542155</bookIsbn>
+			<bookDateOfPublish>1999</bookDateOfPublish>
+			<bookPrice>19.99</bookPrice>
+		</book>
+		<book id='HPGF'>
+			<writer id='Rowling'></writer>
+			<publisher id='BP'></publisher>
+			<bookTitle>Harry Potter and the Goblet of Fire</bookTitle>
+			<bookIsbn>9780747546245</bookIsbn>
+			<bookDateOfPublish>2000</bookDateOfPublish>
+			<bookPrice>20.00</bookPrice>
+		</book>
+		<book id='HPOP'>
+			<writer id='Rowling'></writer>
+			<publisher id='BP'></publisher>
+			<bookTitle>Harry Potter and the Order of the Phoenix</bookTitle>
+			<bookIsbn>9780747551003</bookIsbn>
+			<bookDateOfPublish>2003</bookDateOfPublish>
+			<bookPrice>20.03</bookPrice>
+		</book>
+		<book id='HPHBP'>
+			<writer id='Rowling'></writer>
+			<publisher id='BP'></publisher>
+			<bookTitle>Harry Potter and the Half-Blood Prince</bookTitle>
+			<bookIsbn>9780747581086</bookIsbn>
+			<bookDateOfPublish>2005</bookDateOfPublish>
+			<bookPrice>20.05</bookPrice>
+		</book>
+		<book id='HPDH'>
+			<writer id='Rowling'></writer>
+			<publisher id=''></publisher>
+			<bookTitle>Harry Potter and the Deathly Hallows</bookTitle>
+			<bookIsbn>9780747591054</bookIsbn>
+			<bookDateOfPublish>2007</bookDateOfPublish>
+			<bookPrice>20.07</bookPrice>
 		</book>
 		<book id=''>
 			<writer id=''></writer>
-			<publisher id=""></publisher>
-			<bookTitle></bookTitle>
-			<bookIsbn></bookIsbn>
-			<bookDateOfPublish></bookDateOfPublish>
-			<bookPrice></bookPrice>
-		</book>
-		<book id=''>
-			<writer id=''></writer>
-			<publisher id=""></publisher>
+			<publisher id=''></publisher>
 			<bookTitle></bookTitle>
 			<bookIsbn></bookIsbn>
 			<bookDateOfPublish></bookDateOfPublish>

@@ -1,4 +1,30 @@
 books {
+  font-size: 16px;
   background-color: #1f1f1f;
   color: #ffffff;
+  position: absolute;
+}
+
+technicalData {
+  display: grid;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+authorSurname::after {
+  content: ',';
+}
+
+lastModificationDate::before {
+  position: fixed;
+  right: 0;
+  bottom: 18px;
+  content: 'Last modification date:';
+}
+
+lastModificationDate {
+  position: fixed;
+  right: 0;
+  bottom: 0;
 }
