@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/css" href="books.css"?>
+<!--<!DOCTYPE albums SYSTEM "definitions.dtd">-->
+
+<books>
+	<!--AUTHORS-->
+	<technicalData>
+		<author id='Farkor123'>
+			<authorName>Adam</authorName>
+			<authorSurname>Sadowski</authorSurname>
+			<authorIndexNumber>210310</authorIndexNumber>
+		</author>
+		<author id='PLisik'>
+			<authorName>Patryk</authorName>
+			<authorSurname>Lisik</authorSurname>
+			<authorIndexNumber>2137XD</authorIndexNumber>
+		</author>
+		<lastModificationDate>
+			<lastModificationDay>08</lastModificationDay>
+			<lastModificationMonth>03</lastModificationMonth>
+			<lastModificationYear>2019</lastModificationYear>
+		</lastModificationDate>
+	</technicalData>
+	<!--WRITERS-->
+	<writersList>
+		<writer id='Tolkien'>
+			<writerName>J.R.R.</writerName>
+			<writerSurname>Tolkien</writerSurname>
+			<writerBirthYear>1892</writerBirthYear>
+		</writer>
+		<writer id='Lovecraft'>
+			<writerName>H.P.</writerName>
+			<writerSurname>Lovecraft</writerSurname>
+			<writerBirthYear>1890</writerBirthYear>
+		</writer>
+	</writersList>
+	<!--PUBLISHERS-->
+	<publishersList>
+		<publisher id="AllenUnwin">
+			<publisherName>Allen &amp; Unwin</publisherName>
+		</publisher>
+		<publisher id="WeirdTales">
+			<publisherName>Weird Tales</publisherName>
+		</publisher>
+	</publishersList>
+	<!--BOOKS-->
+	<booksList>
+		<book id='Hobbit'>
+			<writer id='Tolkien'></writer>
+			<publisher id='AllenUnwin'></publisher>
+			<bookTitle>The Hobbit, or There and Back Again</bookTitle>
+			<bookIsbn>9780547928227</bookIsbn>
+			<bookDateOfPublish>1937</bookDateOfPublish>
+			<bookPrice>21.37</bookPrice>
+		</book>
+		<book id='Silmarillion'>
+			<writer id='Tolkien'></writer>
+			<publisher id='AllenUnwin'></publisher>
+			<bookTitle>Silmarillion</bookTitle>
+			<bookIsbn>9782266014359</bookIsbn>
+			<bookDateOfPublish>1977</bookDateOfPublish>
+			<bookPrice>32.71</bookPrice>
+		</book>
+		<book id='UnfinishedTales'>
+			<writer id='Tolkien'></writer>
+			<publisher id='AllenUnwin'></publisher>
+			<bookTitle>Unfinished Tales of Númenor and Middle-earth</bookTitle>
+			<bookIsbn>9780048231796</bookIsbn>
+			<bookDateOfPublish>1980</bookDateOfPublish>
+			<bookPrice>39.90</bookPrice>
+		</book>
+		<book id='Cthulu'>
+			<writer id='Lovecraft'></writer>
+			<publisher id='WeirdTales'></publisher>
+			<bookTitle>The Call of Cthulu</bookTitle>
+			<bookIsbn>9781545135969</bookIsbn>
+			<bookDateOfPublish>1928</bookDateOfPublish>
+			<bookPrice>45.90</bookPrice>
+		</book>
+		<book id='MountainsOfMadness'>
+			<writer id='Lovecraft'></writer>
+			<publisher id=""></publisher>
+			<bookTitle>At the Mountains of Madness</bookTitle>
+			<bookIsbn></bookIsbn>
+			<bookDateOfPublish>1936</bookDateOfPublish>
+			<bookPrice></bookPrice>
+		</book>
+		<book id=''>
+			<writer id=''></writer>
+			<publisher id=""></publisher>
+			<bookTitle></bookTitle>
+			<bookIsbn></bookIsbn>
+			<bookDateOfPublish></bookDateOfPublish>
+			<bookPrice></bookPrice>
+		</book>
+		<book id=''>
+			<writer id=''></writer>
+			<publisher id=""></publisher>
+			<bookTitle></bookTitle>
+			<bookIsbn></bookIsbn>
+			<bookDateOfPublish></bookDateOfPublish>
+			<bookPrice></bookPrice>
+		</book>
+	</booksList>
+</books>
