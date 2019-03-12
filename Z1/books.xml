@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
 <?xml-stylesheet type='text/css' href='books.css'?>
 <?xml-stylesheet type='text/css' href='bookscovers.css'?>
-<!--<!DOCTYPE albums SYSTEM 'books.dtd'>-->
+<!DOCTYPE books SYSTEM 'books.dtd'>
 
 <books>
 	<!--AUTHORS-->

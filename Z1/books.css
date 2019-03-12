@@ -76,3 +76,15 @@ book:hover {
   transition: 0.8s;
   font-size: 16px;
 }
+
+bookIsbn::before {
+  content: 'ISBN: ';
+}
+
+bookDateOfPublish::before {
+  content: 'Published in ';
+}
+
+bookPrice::before {
+  content: '$';
+}

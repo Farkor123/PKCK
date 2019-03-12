@@ -21,3 +21,19 @@
   background: #70C1B3;
   transition: 0.8s;
 }
+
+#Cthulu {
+  background-image: url("./images/cthulu.jpg");
+}
+#Cthulu:hover {
+  background: #70C1B3;
+  transition: 0.8s;
+}
+
+#UnfinishedTales {
+  background-image: url("./images/unfinishedtales.jpg");
+}
+#UnfinishedTales:hover {
+  background: #70C1B3;
+  transition: 0.8s;
+}
