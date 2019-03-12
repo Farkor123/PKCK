@@ -2,7 +2,7 @@
   background-image: url("./images/hobbit.jpg");
 }
 #Hobbit:hover {
-  background: #70C1B3;
+  background: #3D9970;
   transition: 0.8s;
 }
 
@@ -10,7 +10,7 @@
   background-image: url("./images/silmarillion.jpg");
 }
 #Silmarillion:hover {
-  background: #70C1B3;
+  background: #3D9970;
   transition: 0.8s;
 }
 
@@ -18,7 +18,7 @@
   background-image: url("./images/unfinishedtales.jpg");
 }
 #UnfinishedTales:hover {
-  background: #70C1B3;
+  background: #3D9970;
   transition: 0.8s;
 }
 
@@ -26,14 +26,78 @@
   background-image: url("./images/cthulu.jpg");
 }
 #Cthulu:hover {
-  background: #70C1B3;
+  background: #3D9970;
   transition: 0.8s;
 }
 
-#UnfinishedTales {
-  background-image: url("./images/unfinishedtales.jpg");
+#Shadow {
+  background-image: url("./images/shadow.jpg");
 }
-#UnfinishedTales:hover {
-  background: #70C1B3;
+#Shadow:hover {
+  background: #3D9970;
+  transition: 0.8s;
+}
+
+#Kadath {
+  background-image: url("./images/kadath.jpg");
+}
+#Kadath:hover {
+  background: #3D9970;
+  transition: 0.8s;
+}
+
+#HPPS {
+  background-image: url("./images/hpps.jpg");
+}
+#HPPS:hover {
+  background: #3D9970;
+  transition: 0.8s;
+}
+
+#HPCS {
+  background-image: url("./images/hpcs.jpg");
+}
+#HPCS:hover {
+  background: #3D9970;
+  transition: 0.8s;
+}
+
+#HPPA {
+  background-image: url("./images/hppa.jpg");
+}
+#HPPA:hover {
+  background: #3D9970;
+  transition: 0.8s;
+}
+
+#HPGF {
+  background-image: url("./images/hpgf.jpg");
+}
+#HPGF:hover {
+  background: #3D9970;
+  transition: 0.8s;
+}
+
+#HPOP {
+  background-image: url("./images/hpop.jpg");
+}
+#HPOP:hover {
+  background: #3D9970;
+  transition: 0.8s;
+}
+
+#HPHBP {
+  background-image: url("./images/hphbp.jpg");
+}
+#HPHBP:hover {
+  background: #3D9970;
+  transition: 0.8s;
+}
+
+#HPDH {
+  background-image: url("./images/HPDH.jpg");
+}
+#HPDH:hover {
+  background: #3D9970;
   transition: 0.8s;
 }

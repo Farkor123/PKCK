@@ -2,7 +2,7 @@ books {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  background-color: #247BA0;
+  background-color: #001f3f;
   color: #ffffff;
   font-family: sans-serif;
 }
@@ -68,8 +68,7 @@ book {
 
 book:hover {
   display: inline-grid;
-  background: #70C1B3;
-  background-image: linear-gradient(red, yellow, green);
+  background: #3D9970;
   width: 300px;
   margin: 10px;
   height: 300px;
