@@ -51,27 +51,13 @@ booksList {
 
 book {
   display: inline-grid;
-  width: 180px;
-  margin: 10px;
-  height: 180px;
-  background: #000
-}
-
-book {
-  display: inline-grid;
   width: 300px;
   margin: 10px;
   height: 300px;
-  transition: 0.8s;
   font-size: 0px;
 }
 
 book:hover {
-  display: inline-grid;
-  background: #3D9970;
-  width: 300px;
-  margin: 10px;
-  height: 300px;
   transition: 0.8s;
   font-size: 16px;
 }

@@ -3,7 +3,6 @@
 }
 #Hobbit:hover {
   background: #3D9970;
-  transition: 0.8s;
 }
 
 #Silmarillion {
@@ -11,7 +10,6 @@
 }
 #Silmarillion:hover {
   background: #3D9970;
-  transition: 0.8s;
 }
 
 #UnfinishedTales {
@@ -19,7 +17,6 @@
 }
 #UnfinishedTales:hover {
   background: #3D9970;
-  transition: 0.8s;
 }
 
 #Cthulu {
@@ -27,7 +24,6 @@
 }
 #Cthulu:hover {
   background: #3D9970;
-  transition: 0.8s;
 }
 
 #Shadow {
@@ -35,7 +31,6 @@
 }
 #Shadow:hover {
   background: #3D9970;
-  transition: 0.8s;
 }
 
 #Kadath {
@@ -43,7 +38,6 @@
 }
 #Kadath:hover {
   background: #3D9970;
-  transition: 0.8s;
 }
 
 #HPPS {
@@ -51,7 +45,6 @@
 }
 #HPPS:hover {
   background: #3D9970;
-  transition: 0.8s;
 }
 
 #HPCS {
@@ -59,7 +52,6 @@
 }
 #HPCS:hover {
   background: #3D9970;
-  transition: 0.8s;
 }
 
 #HPPA {
@@ -67,7 +59,6 @@
 }
 #HPPA:hover {
   background: #3D9970;
-  transition: 0.8s;
 }
 
 #HPGF {
@@ -75,7 +66,6 @@
 }
 #HPGF:hover {
   background: #3D9970;
-  transition: 0.8s;
 }
 
 #HPOP {
@@ -83,7 +73,6 @@
 }
 #HPOP:hover {
   background: #3D9970;
-  transition: 0.8s;
 }
 
 #HPHBP {
@@ -91,7 +80,6 @@
 }
 #HPHBP:hover {
   background: #3D9970;
-  transition: 0.8s;
 }
 
 #HPDH {
@@ -99,5 +87,4 @@
 }
 #HPDH:hover {
   background: #3D9970;
-  transition: 0.8s;
 }
