@@ -31,8 +31,18 @@
 <!ATTLIST lastModificationDate
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT book (writer,publisher,bookTitle,bookIsbn,bookDateOfPublish,
-                bookPrice)>
+<!ELEMENT writer (writerName,writerSurname,writerBirthYear)>
+<!ATTLIST writer
+  xmlns CDATA #FIXED ''
+  id ID #REQUIRED>
+
+<!ELEMENT publisher (publisherName)>
+<!ATTLIST publisher
+  xmlns CDATA #FIXED ''
+  id ID #REQUIRED>
+
+<!ELEMENT book (bookWriter,bookPublisher,bookTitle,bookIsbn,
+                bookDateOfPublish,bookPrice)>
 <!ATTLIST book
   xmlns CDATA #FIXED ''
   id NMTOKEN #REQUIRED>
@@ -61,6 +71,32 @@
 <!ATTLIST lastModificationYear
   xmlns CDATA #FIXED ''>
 
+<!ELEMENT writerName (#PCDATA)>
+<!ATTLIST writerName
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT writerSurname (#PCDATA)>
+<!ATTLIST writerSurname
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT writerBirthYear (#PCDATA)>
+<!ATTLIST writerBirthYear
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT publisherName (#PCDATA)>
+<!ATTLIST publisherName
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT bookWriter EMPTY>
+<!ATTLIST bookWriter
+  xmlns CDATA #FIXED ''
+  id IDREF #IMPLIED>
+
+<!ELEMENT bookPublisher EMPTY>
+<!ATTLIST bookPublisher
+  xmlns CDATA #FIXED ''
+  id IDREF #IMPLIED>
+
 <!ELEMENT bookTitle (#PCDATA)>
 <!ATTLIST bookTitle
   xmlns CDATA #FIXED ''>
@@ -75,30 +111,4 @@
 
 <!ELEMENT bookPrice (#PCDATA)>
 <!ATTLIST bookPrice
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT writer (writerName,writerSurname,writerBirthYear)?>
-<!ATTLIST writer
-  xmlns CDATA #FIXED ''
-  id NMTOKEN #REQUIRED>
-
-<!ELEMENT writerName (#PCDATA)>
-<!ATTLIST writerName
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT writerSurname (#PCDATA)>
-<!ATTLIST writerSurname
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT writerBirthYear (#PCDATA)>
-<!ATTLIST writerBirthYear
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT publisher (publisherName)?>
-<!ATTLIST publisher
-  xmlns CDATA #FIXED ''
-  id CDATA #REQUIRED>
-
-<!ELEMENT publisherName (#PCDATA)>
-<!ATTLIST publisherName
   xmlns CDATA #FIXED ''>
