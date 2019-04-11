@@ -1,0 +1,75 @@
+books {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #001f3f;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+technicalData {
+  color: #FF1654;
+  font-size: 12px;
+  display: grid;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+authorSurname::after {
+  content: ',';
+}
+
+lastModificationDate::before {
+  position: fixed;
+  right: 0;
+  bottom: 18px;
+  content: 'Last modification date:';
+}
+
+lastModificationDate {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+writersList {
+  display: none;
+}
+
+publishersList {
+  display: none;
+}
+
+booksList {
+  position: absolute;
+  color: #1f1f1f;
+  text-align: center;
+  left: 30%;
+  transform: translateX(-20%);
+}
+
+book {
+  display: inline-grid;
+  width: 300px;
+  margin: 10px;
+  height: 300px;
+  font-size: 0px;
+}
+
+book:hover {
+  transition: 0.8s;
+  font-size: 16px;
+}
+
+bookIsbn::before {
+  content: 'ISBN: ';
+}
+
+bookDateOfPublish::before {
+  content: 'Published in ';
+}
+
+bookPrice::before {
+  content: '$';
+}

@@ -1,163 +1,166 @@
-<?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<?xml-stylesheet type='text/css' href='books.css'?>
-<?xml-stylesheet type='text/css' href='bookscovers.css'?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="books.css"?>
+<?xml-stylesheet type="text/css" href="bookscovers.css"?>
 
-<books xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='books.xsd'>
+<books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="books.xsd"
+       xmlns:data="http://data.example.com"
+       xmlns:publisher="http://publisher.example.com"
+	   xmlns:writer="http://writer.example.com">
 	<!--AUTHORS-->
-	<technicalData>
-		<author id='Farkor123'>
+	<data:technicalData>
+		<data:author authorID="Farkor123">
 			<name>Adam</name>
 			<surname>Sadowski</surname>
 			<authorIndexNumber>210310</authorIndexNumber>
-		</author>
-		<author id='PLisik'>
+		</data:author>
+		<data:author authorID="PLisik">
 			<name>Patryk</name>
 			<surname>Lisik</surname>
-			<authorIndexNumber>210254</authorIndexNumber>
-		</author>
-		<lastModificationDate>
-			<lastModificationDay>12</lastModificationDay>
-			<lastModificationMonth>03</lastModificationMonth>
+			<authorIndexNumber>210310</authorIndexNumber>
+		</data:author>
+		<data:lastModificationDate>
+			<lastModificationDay>---12</lastModificationDay>
+			<lastModificationMonth>--03</lastModificationMonth>
 			<lastModificationYear>2019</lastModificationYear>
-		</lastModificationDate>
-	<technicalData>
+		</data:lastModificationDate>
+	</data:technicalData>
 	<!--WRITERS-->
-	<writersList>
-		<writer id='Tolkien'>
+	<writer:writersList>
+		<writer:writer writerID="Tolkien">
 			<name>J.R.R.</name>
 			<surname>Tolkien</surname>
 			<writerBirthYear>1892</writerBirthYear>
-		</writer>
-		<writer id='Lovecraft'>
+		</writer:writer>
+		<writer:writer writerID="Lovecraft">
 			<name>H.P.</name>
 			<surname>Lovecraft</surname>
 			<writerBirthYear>1890</writerBirthYear>
-		</writer>
-		<writer id='Rowling'>
+		</writer:writer>
+		<writer:writer writerID="Rowling">
 			<name>J.K.</name>
 			<surname>Rowling</surname>
 			<writerBirthYear>1965</writerBirthYear>
-		</writer>
-	</writersList>
+		</writer:writer>
+	</writer:writersList>
 	<!--PUBLISHERS-->
-	<publishersList>
-		<publisher id='AllenUnwin'>
+	<publisher:publishersList>
+		<publisher:publisher publisherID="AllenUnwin">
 			<publisherName>Allen &amp; Unwin</publisherName>
-		</publisher>
-		<publisher id='WeirdTales'>
+		</publisher:publisher>
+		<publisher:publisher publisherID="WeirdTales">
 			<publisherName>Weird Tales</publisherName>
-		</publisher>
-		<publisher id='VPC'>
+		</publisher:publisher>
+		<publisher:publisher publisherID="VPC">
 			<publisherName>Visionary Publishing Company</publisherName>
-		</publisher>
-		<publisher id='AH'>
+		</publisher:publisher>
+		<publisher:publisher publisherID="AH">
 			<publisherName>Arkham House</publisherName>
-		</publisher>
-		<publisher id='BP'>
+		</publisher:publisher>
+		<publisher:publisher publisherID="BP">
 			<publisherName>Bloomsbury Publishing</publisherName>
-		</publisher>
-	</publishersList>
+		</publisher:publisher>
+	</publisher:publishersList>
 	<!--BOOKS-->
 	<booksList>
-		<book id='Hobbit'>
-			<bookWriter id='Tolkien'></bookWriter>
-			<bookPublisher id='AllenUnwin'></bookPublisher>
+		<book bookID="Hobbit">
+			<bookWriter writerID="Tolkien"/>
+			<bookPublisher publisherID="AllenUnwin"/>
 			<bookTitle>The Hobbit, or There and Back Again</bookTitle>
 			<bookIsbn>9780547928227</bookIsbn>
 			<bookDateOfPublish>1937</bookDateOfPublish>
 			<bookPrice>21.37</bookPrice>
 		</book>
-		<book id='Silmarillion'>
-			<bookWriter id='Tolkien'></bookWriter>
-			<bookPublisher id='AllenUnwin'></bookPublisher>
+		<book bookID="Silmarillion">
+			<bookWriter writerID="Tolkien"/>
+			<bookPublisher publisherID="AllenUnwin"/>
 			<bookTitle>Silmarillion</bookTitle>
 			<bookIsbn>9782266014359</bookIsbn>
 			<bookDateOfPublish>1977</bookDateOfPublish>
 			<bookPrice>32.71</bookPrice>
 		</book>
-		<book id='UnfinishedTales'>
-			<bookWriter id='Tolkien'></bookWriter>
-			<bookPublisher id='AllenUnwin'></bookPublisher>
+		<book bookID="UnfinishedTales">
+			<bookWriter writerID="Tolkien"/>
+			<bookPublisher publisherID="AllenUnwin"/>
 			<bookTitle>Unfinished Tales of Númenor and Middle-earth</bookTitle>
 			<bookIsbn>9780048231796</bookIsbn>
 			<bookDateOfPublish>1980</bookDateOfPublish>
 			<bookPrice>39.90</bookPrice>
 		</book>
-		<book id='Cthulu'>
-			<bookWriter id='Lovecraft'></bookWriter>
-			<bookPublisher id='WeirdTales'></bookPublisher>
+		<book bookID="Cthulu">
+			<bookWriter writerID="Lovecraft"/>
+			<bookPublisher publisherID="WeirdTales"/>
 			<bookTitle>The Call of Cthulu</bookTitle>
 			<bookIsbn>9781545135969</bookIsbn>
 			<bookDateOfPublish>1928</bookDateOfPublish>
 			<bookPrice>45.90</bookPrice>
 		</book>
-		<book id='Shadow'>
-			<bookWriter id='Lovecraft'></bookWriter>
-			<bookPublisher id='VPC'></bookPublisher>
+		<book bookID="Shadow">
+			<bookWriter writerID="Lovecraft"/>
+			<bookPublisher publisherID="VPC"/>
 			<bookTitle>The Shadow over Innsmouth</bookTitle>
 			<bookIsbn>9788577151875</bookIsbn>
 			<bookDateOfPublish>1936</bookDateOfPublish>
 			<bookPrice>33.20</bookPrice>
 		</book>
-		<book id='Kadath'>
-			<bookWriter id='Lovecraft'></bookWriter>
-			<bookPublisher id='AH'></bookPublisher>
+		<book bookID="Kadath">
+			<bookWriter writerID="Lovecraft"/>
+			<bookPublisher publisherID="AH"/>
 			<bookTitle>The Dream-Quest of Unknown Kadath</bookTitle>
 			<bookIsbn>9781539162742</bookIsbn>
 			<bookDateOfPublish>1943</bookDateOfPublish>
 			<bookPrice>26.95</bookPrice>
 		</book>
-		<book id='HPPS'>
-			<bookWriter id='Rowling'></bookWriter>
-			<bookPublisher id='BP'></bookPublisher>
-			<bookTitle>Harry Potter and the Philosopher's Stone</bookTitle>
+		<book bookID="HPPS">
+			<bookWriter writerID="Rowling"/>
+			<bookPublisher publisherID="BP"/>
+			<bookTitle>Harry Potter and the Philosopher"s Stone</bookTitle>
 			<bookIsbn>9780747532743</bookIsbn>
 			<bookDateOfPublish>1997</bookDateOfPublish>
 			<bookPrice>3.43</bookPrice>
 		</book>
-		<book id='HPCS'>
-			<bookWriter id='Rowling'></bookWriter>
-			<bookPublisher id='BP'></bookPublisher>
+		<book bookID="HPCS">
+			<bookWriter writerID="Rowling"/>
+			<bookPublisher publisherID="BP"/>
 			<bookTitle>Harry Potter and the Chamber of Secrets</bookTitle>
 			<bookIsbn>9780747538493</bookIsbn>
 			<bookDateOfPublish>1997</bookDateOfPublish>
 			<bookPrice>101.49</bookPrice>
 		</book>
-		<book id='HPPA'>
-			<bookWriter id='Rowling'></bookWriter>
-			<bookPublisher id='BP'></bookPublisher>
+		<book bookID="HPPA">
+			<bookWriter writerID="Rowling"/>
+			<bookPublisher publisherID="BP"/>
 			<bookTitle>Harry Potter and the Prisoner of Azkaban</bookTitle>
 			<bookIsbn>9780747542155</bookIsbn>
 			<bookDateOfPublish>1999</bookDateOfPublish>
 			<bookPrice>19.99</bookPrice>
 		</book>
-		<book id='HPGF'>
-			<bookWriter id='Rowling'></bookWriter>
-			<bookPublisher id='BP'></bookPublisher>
+		<book bookID="HPGF">
+			<bookWriter writerID="Rowling"/>
+			<bookPublisher publisherID="BP"/>
 			<bookTitle>Harry Potter and the Goblet of Fire</bookTitle>
 			<bookIsbn>9780747546245</bookIsbn>
 			<bookDateOfPublish>2000</bookDateOfPublish>
 			<bookPrice>20.00</bookPrice>
 		</book>
-		<book id='HPOP'>
-			<bookWriter id='Rowling'></bookWriter>
-			<bookPublisher id='BP'></bookPublisher>
+		<book bookID="HPOP">
+			<bookWriter writerID="Rowling"/>
+			<bookPublisher publisherID="BP"/>
 			<bookTitle>Harry Potter and the Order of the Phoenix</bookTitle>
 			<bookIsbn>9780747551003</bookIsbn>
 			<bookDateOfPublish>2003</bookDateOfPublish>
 			<bookPrice>20.03</bookPrice>
 		</book>
-		<book id='HPHBP'>
-			<bookWriter id='Rowling'></bookWriter>
-			<bookPublisher id='BP'></bookPublisher>
+		<book bookID="HPHBP">
+			<bookWriter writerID="Rowling"/>
+			<bookPublisher publisherID="BP"/>
 			<bookTitle>Harry Potter and the Half-Blood Prince</bookTitle>
 			<bookIsbn>9780747581086</bookIsbn>
 			<bookDateOfPublish>2005</bookDateOfPublish>
 			<bookPrice>20.05</bookPrice>
 		</book>
-		<book id='HPDH'>
-			<bookWriter id='Rowling'></bookWriter>
-			<bookPublisher id='BP'></bookPublisher>
+		<book bookID="HPDH">
+			<bookWriter writerID="Rowling"/>
+			<bookPublisher publisherID="BP"/>
 			<bookTitle>Harry Potter and the Deathly Hallows</bookTitle>
 			<bookIsbn>9780747591054</bookIsbn>
 			<bookDateOfPublish>2007</bookDateOfPublish>
