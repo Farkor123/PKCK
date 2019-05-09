@@ -17,21 +17,39 @@
             </head>
             <body>
                 <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <h3>Column 1</h3>
-                            <p>Lorem ipsum dolor..</p>
-                            <p>Lorem ipsum dolor..</p>
-                            <p>Lorem ipsum dolor..</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <h3>Column 2</h3>
-                            <p>Lorem ipsum dolor..</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <h3>Column 3</h3>
-                            <p>Lorem ipsum dolor..</p>
-                        </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <caption>List of books</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">id</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">ISBN</th>
+                                    <th scope="col">Publication Date</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">writer's name</th>
+                                    <th scope="col">writer's surname</th>
+                                    <th scope="col">writer's birth year</th>
+                                    <th scope="col">publisher name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <xsl:for-each select="report/books/book">
+                                    <tr>
+                                        <td><xsl:value-of select="ID"/></td>
+                                        <td><xsl:value-of select="bookTitle"/></td>
+                                        <td><xsl:value-of select="bookIsbn"/></td>
+                                        <td><xsl:value-of select="bookDateOfPublish"/></td>
+                                        <td><xsl:value-of select="bookPrice"/></td>
+                                        <td><xsl:value-of select="writerName"/></td>
+                                        <td><xsl:value-of select="writerSurname"/></td>
+                                        <td><xsl:value-of select="writerBirthYear"/></td>
+                                        <td><xsl:value-of select="publisherName"/></td>
+                                    </tr>
+
+                                </xsl:for-each>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
