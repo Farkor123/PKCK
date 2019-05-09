@@ -19,10 +19,28 @@
                 <div class="container">
                     <div class="table-responsive">
                         <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">number of books</th>
+                                    <th scope="col">average price of book</th>
+                                    <th scope="col">number of writers</th>
+                                    <th scope="col">number of publishers</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><xsl:value-of select="report/stats/bookNumber"/></td>
+                                    <td><xsl:value-of select="report/stats/bookPriceAVG"/></td>
+                                    <td><xsl:value-of select="report/stats/writerNumber"/></td>
+                                    <td><xsl:value-of select="report/stats/publisherNumber"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table table-striped">
                             <caption>List of books</caption>
                             <thead>
                                 <tr>
-                                    <th scope="col">id</th>
                                     <th scope="col">Title</th>
                                     <th scope="col">ISBN</th>
                                     <th scope="col">Publication Date</th>
@@ -36,7 +54,6 @@
                             <tbody>
                                 <xsl:for-each select="report/books/book">
                                     <tr>
-                                        <td><xsl:value-of select="ID"/></td>
                                         <td><xsl:value-of select="bookTitle"/></td>
                                         <td><xsl:value-of select="bookIsbn"/></td>
                                         <td><xsl:value-of select="bookDateOfPublish"/></td>
