@@ -9,7 +9,7 @@
                     <xsl:sort select="@id"/>
                     <xsl:element name="book">
 
-                        <xsl:variable name="Writer" select="bookWriter/@id" />
+                        <xsl:variable name="Writer" select="bookWriter/@id"/>
                         <xsl:variable name="Publisher" select="bookPublisher/@id"/>
 
                         <xsl:element name="ID">
@@ -54,6 +54,27 @@
                 </xsl:for-each>
 
             </xsl:element>
+
+
+            <xsl:element name="stats">
+                <xsl:variable name="booksNumber" select="count(books/booksList/book)"/>
+                <xsl:element name="bookNumber">
+                    <xsl:value-of select="$booksNumber"/>
+                </xsl:element>
+                <xsl:element name="bookPriceAVG">
+                    <xsl:value-of select="sum(books/booksList/book/bookPrice) div $booksNumber"/>
+                </xsl:element>
+
+                <xsl:element name="writerNumber">
+                    <xsl:value-of select="count(books/writersList/writer)"/>
+                </xsl:element>
+
+                <xsl:element name="publisherNumber">
+                    <xsl:value-of select="count(books/publishersList/publisher)"/>
+                </xsl:element>
+
+            </xsl:element>
         </xsl:element>
     </xsl:template>
+
 </xsl:stylesheet>
