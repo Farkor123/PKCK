@@ -58,11 +58,12 @@
 
             <xsl:element name="stats">
                 <xsl:variable name="booksNumber" select="count(books/booksList/book)"/>
+                <xsl:variable name="bookPriceAVG" select="sum(books/booksList/book/bookPrice) div $booksNumber"/>
                 <xsl:element name="bookNumber">
                     <xsl:value-of select="$booksNumber"/>
                 </xsl:element>
                 <xsl:element name="bookPriceAVG">
-                    <xsl:value-of select="sum(books/booksList/book/bookPrice) div $booksNumber"/>
+                    <xsl:value-of select="format-number($bookPriceAVG,'#.##')"/>
                 </xsl:element>
 
                 <xsl:element name="writerNumber">
