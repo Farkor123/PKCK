@@ -42,6 +42,14 @@
                                 </xsl:element>
                             </xsl:if>
                         </xsl:for-each>
+
+                        <xsl:for-each select="../../../books/publishersList/publisher">
+                            <xsl:if test="$Publisher = @id">
+                                <xsl:element name="publisherName">
+                                    <xsl:value-of select="publisherName"/>
+                                </xsl:element>
+                            </xsl:if>
+                        </xsl:for-each>
                     </xsl:element>
                 </xsl:for-each>
 

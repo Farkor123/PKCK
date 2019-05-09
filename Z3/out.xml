@@ -1,6 +1,6 @@
-<?xml version="2.0" encoding="UTF-8"?><Report>
-<Books>
-<Book>
+<?xml version="2.0" encoding="UTF-8"?><report>
+<books>
+<book>
 <ID>Cthulu</ID>
 <bookTitle>The Call of Cthulu</bookTitle>
 <bookIsbn>9781545135969</bookIsbn>
@@ -9,8 +9,9 @@
 <writerName>H.P.</writerName>
 <writerSurname>Lovecraft</writerSurname>
 <writerBirthYear>1890</writerBirthYear>
-</Book>
-<Book>
+<publisherName>Weird Tales</publisherName>
+</book>
+<book>
 <ID>Hobbit</ID>
 <bookTitle>The Hobbit, or There and Back Again</bookTitle>
 <bookIsbn>9780547928227</bookIsbn>
@@ -19,8 +20,9 @@
 <writerName>J.R.R.</writerName>
 <writerSurname>Tolkien</writerSurname>
 <writerBirthYear>1892</writerBirthYear>
-</Book>
-<Book>
+<publisherName>Allen &amp; Unwin</publisherName>
+</book>
+<book>
 <ID>HPCS</ID>
 <bookTitle>Harry Potter and the Chamber of Secrets</bookTitle>
 <bookIsbn>9780747538493</bookIsbn>
@@ -29,8 +31,9 @@
 <writerName>J.K.</writerName>
 <writerSurname>Rowling</writerSurname>
 <writerBirthYear>1965</writerBirthYear>
-</Book>
-<Book>
+<publisherName>Bloomsbury Publishing</publisherName>
+</book>
+<book>
 <ID>HPDH</ID>
 <bookTitle>Harry Potter and the Deathly Hallows</bookTitle>
 <bookIsbn>9780747591054</bookIsbn>
@@ -39,8 +42,9 @@
 <writerName>J.K.</writerName>
 <writerSurname>Rowling</writerSurname>
 <writerBirthYear>1965</writerBirthYear>
-</Book>
-<Book>
+<publisherName>Bloomsbury Publishing</publisherName>
+</book>
+<book>
 <ID>HPGF</ID>
 <bookTitle>Harry Potter and the Goblet of Fire</bookTitle>
 <bookIsbn>9780747546245</bookIsbn>
@@ -49,8 +53,9 @@
 <writerName>J.K.</writerName>
 <writerSurname>Rowling</writerSurname>
 <writerBirthYear>1965</writerBirthYear>
-</Book>
-<Book>
+<publisherName>Bloomsbury Publishing</publisherName>
+</book>
+<book>
 <ID>HPHBP</ID>
 <bookTitle>Harry Potter and the Half-Blood Prince</bookTitle>
 <bookIsbn>9780747581086</bookIsbn>
@@ -59,8 +64,9 @@
 <writerName>J.K.</writerName>
 <writerSurname>Rowling</writerSurname>
 <writerBirthYear>1965</writerBirthYear>
-</Book>
-<Book>
+<publisherName>Bloomsbury Publishing</publisherName>
+</book>
+<book>
 <ID>HPOP</ID>
 <bookTitle>Harry Potter and the Order of the Phoenix</bookTitle>
 <bookIsbn>9780747551003</bookIsbn>
@@ -69,8 +75,9 @@
 <writerName>J.K.</writerName>
 <writerSurname>Rowling</writerSurname>
 <writerBirthYear>1965</writerBirthYear>
-</Book>
-<Book>
+<publisherName>Bloomsbury Publishing</publisherName>
+</book>
+<book>
 <ID>HPPA</ID>
 <bookTitle>Harry Potter and the Prisoner of Azkaban</bookTitle>
 <bookIsbn>9780747542155</bookIsbn>
@@ -79,8 +86,9 @@
 <writerName>J.K.</writerName>
 <writerSurname>Rowling</writerSurname>
 <writerBirthYear>1965</writerBirthYear>
-</Book>
-<Book>
+<publisherName>Bloomsbury Publishing</publisherName>
+</book>
+<book>
 <ID>HPPS</ID>
 <bookTitle>Harry Potter and the Philosopher's Stone</bookTitle>
 <bookIsbn>9780747532743</bookIsbn>
@@ -89,8 +97,9 @@
 <writerName>J.K.</writerName>
 <writerSurname>Rowling</writerSurname>
 <writerBirthYear>1965</writerBirthYear>
-</Book>
-<Book>
+<publisherName>Bloomsbury Publishing</publisherName>
+</book>
+<book>
 <ID>Kadath</ID>
 <bookTitle>The Dream-Quest of Unknown Kadath</bookTitle>
 <bookIsbn>9781539162742</bookIsbn>
@@ -99,8 +108,9 @@
 <writerName>H.P.</writerName>
 <writerSurname>Lovecraft</writerSurname>
 <writerBirthYear>1890</writerBirthYear>
-</Book>
-<Book>
+<publisherName>Arkham House</publisherName>
+</book>
+<book>
 <ID>Shadow</ID>
 <bookTitle>The Shadow over Innsmouth</bookTitle>
 <bookIsbn>9788577151875</bookIsbn>
@@ -109,8 +119,9 @@
 <writerName>H.P.</writerName>
 <writerSurname>Lovecraft</writerSurname>
 <writerBirthYear>1890</writerBirthYear>
-</Book>
-<Book>
+<publisherName>Visionary Publishing Company</publisherName>
+</book>
+<book>
 <ID>Silmarillion</ID>
 <bookTitle>Silmarillion</bookTitle>
 <bookIsbn>9782266014359</bookIsbn>
@@ -119,8 +130,9 @@
 <writerName>J.R.R.</writerName>
 <writerSurname>Tolkien</writerSurname>
 <writerBirthYear>1892</writerBirthYear>
-</Book>
-<Book>
+<publisherName>Allen &amp; Unwin</publisherName>
+</book>
+<book>
 <ID>UnfinishedTales</ID>
 <bookTitle>Unfinished Tales of Númenor and Middle-earth</bookTitle>
 <bookIsbn>9780048231796</bookIsbn>
@@ -129,6 +141,7 @@
 <writerName>J.R.R.</writerName>
 <writerSurname>Tolkien</writerSurname>
 <writerBirthYear>1892</writerBirthYear>
-</Book>
-</Books>
-</Report>
+<publisherName>Allen &amp; Unwin</publisherName>
+</book>
+</books>
+</report>
