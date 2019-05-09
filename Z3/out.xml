@@ -1,0 +1,134 @@
+<?xml version="2.0" encoding="UTF-8"?><Report>
+<Books>
+<Book>
+<ID>Cthulu</ID>
+<bookTitle>The Call of Cthulu</bookTitle>
+<bookIsbn>9781545135969</bookIsbn>
+<bookDateOfPublish>1928</bookDateOfPublish>
+<bookPrice>45.90</bookPrice>
+<writerName>H.P.</writerName>
+<writerSurname>Lovecraft</writerSurname>
+<writerBirthYear>1890</writerBirthYear>
+</Book>
+<Book>
+<ID>Hobbit</ID>
+<bookTitle>The Hobbit, or There and Back Again</bookTitle>
+<bookIsbn>9780547928227</bookIsbn>
+<bookDateOfPublish>1937</bookDateOfPublish>
+<bookPrice>21.37</bookPrice>
+<writerName>J.R.R.</writerName>
+<writerSurname>Tolkien</writerSurname>
+<writerBirthYear>1892</writerBirthYear>
+</Book>
+<Book>
+<ID>HPCS</ID>
+<bookTitle>Harry Potter and the Chamber of Secrets</bookTitle>
+<bookIsbn>9780747538493</bookIsbn>
+<bookDateOfPublish>1997</bookDateOfPublish>
+<bookPrice>101.49</bookPrice>
+<writerName>J.K.</writerName>
+<writerSurname>Rowling</writerSurname>
+<writerBirthYear>1965</writerBirthYear>
+</Book>
+<Book>
+<ID>HPDH</ID>
+<bookTitle>Harry Potter and the Deathly Hallows</bookTitle>
+<bookIsbn>9780747591054</bookIsbn>
+<bookDateOfPublish>2007</bookDateOfPublish>
+<bookPrice>20.07</bookPrice>
+<writerName>J.K.</writerName>
+<writerSurname>Rowling</writerSurname>
+<writerBirthYear>1965</writerBirthYear>
+</Book>
+<Book>
+<ID>HPGF</ID>
+<bookTitle>Harry Potter and the Goblet of Fire</bookTitle>
+<bookIsbn>9780747546245</bookIsbn>
+<bookDateOfPublish>2000</bookDateOfPublish>
+<bookPrice>20.00</bookPrice>
+<writerName>J.K.</writerName>
+<writerSurname>Rowling</writerSurname>
+<writerBirthYear>1965</writerBirthYear>
+</Book>
+<Book>
+<ID>HPHBP</ID>
+<bookTitle>Harry Potter and the Half-Blood Prince</bookTitle>
+<bookIsbn>9780747581086</bookIsbn>
+<bookDateOfPublish>2005</bookDateOfPublish>
+<bookPrice>20.05</bookPrice>
+<writerName>J.K.</writerName>
+<writerSurname>Rowling</writerSurname>
+<writerBirthYear>1965</writerBirthYear>
+</Book>
+<Book>
+<ID>HPOP</ID>
+<bookTitle>Harry Potter and the Order of the Phoenix</bookTitle>
+<bookIsbn>9780747551003</bookIsbn>
+<bookDateOfPublish>2003</bookDateOfPublish>
+<bookPrice>20.03</bookPrice>
+<writerName>J.K.</writerName>
+<writerSurname>Rowling</writerSurname>
+<writerBirthYear>1965</writerBirthYear>
+</Book>
+<Book>
+<ID>HPPA</ID>
+<bookTitle>Harry Potter and the Prisoner of Azkaban</bookTitle>
+<bookIsbn>9780747542155</bookIsbn>
+<bookDateOfPublish>1999</bookDateOfPublish>
+<bookPrice>19.99</bookPrice>
+<writerName>J.K.</writerName>
+<writerSurname>Rowling</writerSurname>
+<writerBirthYear>1965</writerBirthYear>
+</Book>
+<Book>
+<ID>HPPS</ID>
+<bookTitle>Harry Potter and the Philosopher's Stone</bookTitle>
+<bookIsbn>9780747532743</bookIsbn>
+<bookDateOfPublish>1997</bookDateOfPublish>
+<bookPrice>3.43</bookPrice>
+<writerName>J.K.</writerName>
+<writerSurname>Rowling</writerSurname>
+<writerBirthYear>1965</writerBirthYear>
+</Book>
+<Book>
+<ID>Kadath</ID>
+<bookTitle>The Dream-Quest of Unknown Kadath</bookTitle>
+<bookIsbn>9781539162742</bookIsbn>
+<bookDateOfPublish>1943</bookDateOfPublish>
+<bookPrice>26.95</bookPrice>
+<writerName>H.P.</writerName>
+<writerSurname>Lovecraft</writerSurname>
+<writerBirthYear>1890</writerBirthYear>
+</Book>
+<Book>
+<ID>Shadow</ID>
+<bookTitle>The Shadow over Innsmouth</bookTitle>
+<bookIsbn>9788577151875</bookIsbn>
+<bookDateOfPublish>1936</bookDateOfPublish>
+<bookPrice>33.20</bookPrice>
+<writerName>H.P.</writerName>
+<writerSurname>Lovecraft</writerSurname>
+<writerBirthYear>1890</writerBirthYear>
+</Book>
+<Book>
+<ID>Silmarillion</ID>
+<bookTitle>Silmarillion</bookTitle>
+<bookIsbn>9782266014359</bookIsbn>
+<bookDateOfPublish>1977</bookDateOfPublish>
+<bookPrice>32.71</bookPrice>
+<writerName>J.R.R.</writerName>
+<writerSurname>Tolkien</writerSurname>
+<writerBirthYear>1892</writerBirthYear>
+</Book>
+<Book>
+<ID>UnfinishedTales</ID>
+<bookTitle>Unfinished Tales of Númenor and Middle-earth</bookTitle>
+<bookIsbn>9780048231796</bookIsbn>
+<bookDateOfPublish>1980</bookDateOfPublish>
+<bookPrice>39.90</bookPrice>
+<writerName>J.R.R.</writerName>
+<writerSurname>Tolkien</writerSurname>
+<writerBirthYear>1892</writerBirthYear>
+</Book>
+</Books>
+</Report>
