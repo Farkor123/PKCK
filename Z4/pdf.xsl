@@ -4,10 +4,10 @@
     <xsl:template match="/">
         <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
             <fo:layout-master-set>
-                <fo:simple-page-master master-name="Books" page-height="8.5in" page-width="11in" font-family="sans-serif">
+                <fo:simple-page-master master-name="Books" page-height="8.5in" page-width="11in">
                     <fo:region-body region-name="only_region" margin="1in" background-color="white"/>
                 </fo:simple-page-master>
-                <fo:simple-page-master master-name="Books stats" page-height="11in" page-width="8.5in" font-family="sans-serif">
+                <fo:simple-page-master master-name="BooksStats" page-height="11in" page-width="8.5in">
                     <fo:region-body region-name="only_region" margin="1in" background-color="white"/>
                 </fo:simple-page-master>
             </fo:layout-master-set>
@@ -92,9 +92,9 @@
                     </fo:table>
                 </fo:flow>
             </fo:page-sequence>
-            <fo:page-sequence master-reference="Books stats">
+            <fo:page-sequence master-reference="BooksStats">
                 <fo:flow flow-name="only_region">
-                    <fo:block text-align="left" font-weight="bold" font-size="20">Books Stats</fo:block>
+                    <fo:block text-align="left" font-weight="bold" font-size="20">BooksStats</fo:block>
                     <fo:list-block>
                         <fo:list-item>
                             <fo:list-item-label>
