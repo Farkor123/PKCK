@@ -1,77 +1,190 @@
 <html lang="en">
 <head>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<title>PKCK | zad3</title>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>PKCK | zad3</title>
 </head>
 <body>
 <div class="container">
-<div class="table-responsive">
-<table class="table">
-<thead>
-<tr>
-<th scope="col">number of books</th><th scope="col">average price of book</th><th scope="col">number of writers</th><th scope="col">number of publishers</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>13</td><td>31.16</td><td>3</td><td>5</td>
-</tr>
-</tbody>
-</table>
-<table class="table table-striped">
-<caption>List of books</caption>
-<thead>
-<tr>
-<th scope="col">Title</th><th scope="col">ISBN</th><th scope="col">Publication Date</th><th scope="col">Price</th><th scope="col">writer's name</th><th scope="col">writer's surname</th><th scope="col">writer's birth year</th><th scope="col">publisher name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The Call of Cthulu</td><td>9781545135969</td><td>1928</td><td>45.90</td><td>H.P.</td><td>Lovecraft</td><td>1890</td><td>Weird Tales</td>
-</tr>
-<tr>
-<td>The Hobbit, or There and Back Again</td><td>9780547928227</td><td>1937</td><td>21.37</td><td>J.R.R.</td><td>Tolkien</td><td>1892</td><td>Allen &amp; Unwin</td>
-</tr>
-<tr>
-<td>Harry Potter and the Chamber of Secrets</td><td>9780747538493</td><td>1997</td><td>101.49</td><td>J.K.</td><td>Rowling</td><td>1965</td><td>Bloomsbury Publishing</td>
-</tr>
-<tr>
-<td>Harry Potter and the Deathly Hallows</td><td>9780747591054</td><td>2007</td><td>20.07</td><td>J.K.</td><td>Rowling</td><td>1965</td><td>Bloomsbury Publishing</td>
-</tr>
-<tr>
-<td>Harry Potter and the Goblet of Fire</td><td>9780747546245</td><td>2000</td><td>20.00</td><td>J.K.</td><td>Rowling</td><td>1965</td><td>Bloomsbury Publishing</td>
-</tr>
-<tr>
-<td>Harry Potter and the Half-Blood Prince</td><td>9780747581086</td><td>2005</td><td>20.05</td><td>J.K.</td><td>Rowling</td><td>1965</td><td>Bloomsbury Publishing</td>
-</tr>
-<tr>
-<td>Harry Potter and the Order of the Phoenix</td><td>9780747551003</td><td>2003</td><td>20.03</td><td>J.K.</td><td>Rowling</td><td>1965</td><td>Bloomsbury Publishing</td>
-</tr>
-<tr>
-<td>Harry Potter and the Prisoner of Azkaban</td><td>9780747542155</td><td>1999</td><td>19.99</td><td>J.K.</td><td>Rowling</td><td>1965</td><td>Bloomsbury Publishing</td>
-</tr>
-<tr>
-<td>Harry Potter and the Philosopher's Stone</td><td>9780747532743</td><td>1997</td><td>3.43</td><td>J.K.</td><td>Rowling</td><td>1965</td><td>Bloomsbury Publishing</td>
-</tr>
-<tr>
-<td>The Dream-Quest of Unknown Kadath</td><td>9781539162742</td><td>1943</td><td>26.95</td><td>H.P.</td><td>Lovecraft</td><td>1890</td><td>Arkham House</td>
-</tr>
-<tr>
-<td>The Shadow over Innsmouth</td><td>9788577151875</td><td>1936</td><td>33.20</td><td>H.P.</td><td>Lovecraft</td><td>1890</td><td>Visionary Publishing Company</td>
-</tr>
-<tr>
-<td>Silmarillion</td><td>9782266014359</td><td>1977</td><td>32.71</td><td>J.R.R.</td><td>Tolkien</td><td>1892</td><td>Allen &amp; Unwin</td>
-</tr>
-<tr>
-<td>Unfinished Tales of N&uacute;menor and Middle-earth</td><td>9780048231796</td><td>1980</td><td>39.90</td><td>J.R.R.</td><td>Tolkien</td><td>1892</td><td>Allen &amp; Unwin</td>
-</tr>
-</tbody>
-</table>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">number of books</th>
+                <th scope="col">average price of book</th>
+                <th scope="col">number of writers</th>
+                <th scope="col">number of publishers</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>13</td>
+                <td>31.16</td>
+                <td>3</td>
+                <td>5</td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="table table-striped">
+            <caption>List of books</caption>
+            <thead>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">ISBN</th>
+                <th scope="col">Publication Date</th>
+                <th scope="col">Price</th>
+                <th scope="col">writer's name</th>
+                <th scope="col">writer's surname</th>
+                <th scope="col">writer's birth year</th>
+                <th scope="col">publisher name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>The Call of Cthulu</td>
+                <td>9781545135969</td>
+                <td>1928</td>
+                <td>45.90</td>
+                <td>H.P.</td>
+                <td>Lovecraft</td>
+                <td>1890</td>
+                <td>Weird Tales</td>
+            </tr>
+            <tr>
+                <td>The Hobbit, or There and Back Again</td>
+                <td>9780547928227</td>
+                <td>1937</td>
+                <td>21.37</td>
+                <td>J.R.R.</td>
+                <td>Tolkien</td>
+                <td>1892</td>
+                <td>Allen &amp; Unwin</td>
+            </tr>
+            <tr>
+                <td>Harry Potter and the Chamber of Secrets</td>
+                <td>9780747538493</td>
+                <td>1997</td>
+                <td>101.49</td>
+                <td>J.K.</td>
+                <td>Rowling</td>
+                <td>1965</td>
+                <td>Bloomsbury Publishing</td>
+            </tr>
+            <tr>
+                <td>Harry Potter and the Deathly Hallows</td>
+                <td>9780747591054</td>
+                <td>2007</td>
+                <td>20.07</td>
+                <td>J.K.</td>
+                <td>Rowling</td>
+                <td>1965</td>
+                <td>Bloomsbury Publishing</td>
+            </tr>
+            <tr>
+                <td>Harry Potter and the Goblet of Fire</td>
+                <td>9780747546245</td>
+                <td>2000</td>
+                <td>20.00</td>
+                <td>J.K.</td>
+                <td>Rowling</td>
+                <td>1965</td>
+                <td>Bloomsbury Publishing</td>
+            </tr>
+            <tr>
+                <td>Harry Potter and the Half-Blood Prince</td>
+                <td>9780747581086</td>
+                <td>2005</td>
+                <td>20.05</td>
+                <td>J.K.</td>
+                <td>Rowling</td>
+                <td>1965</td>
+                <td>Bloomsbury Publishing</td>
+            </tr>
+            <tr>
+                <td>Harry Potter and the Order of the Phoenix</td>
+                <td>9780747551003</td>
+                <td>2003</td>
+                <td>20.03</td>
+                <td>J.K.</td>
+                <td>Rowling</td>
+                <td>1965</td>
+                <td>Bloomsbury Publishing</td>
+            </tr>
+            <tr>
+                <td>Harry Potter and the Prisoner of Azkaban</td>
+                <td>9780747542155</td>
+                <td>1999</td>
+                <td>19.99</td>
+                <td>J.K.</td>
+                <td>Rowling</td>
+                <td>1965</td>
+                <td>Bloomsbury Publishing</td>
+            </tr>
+            <tr>
+                <td>Harry Potter and the Philosopher's Stone</td>
+                <td>9780747532743</td>
+                <td>1997</td>
+                <td>3.43</td>
+                <td>J.K.</td>
+                <td>Rowling</td>
+                <td>1965</td>
+                <td>Bloomsbury Publishing</td>
+            </tr>
+            <tr>
+                <td>The Dream-Quest of Unknown Kadath</td>
+                <td>9781539162742</td>
+                <td>1943</td>
+                <td>26.95</td>
+                <td>H.P.</td>
+                <td>Lovecraft</td>
+                <td>1890</td>
+                <td>Arkham House</td>
+            </tr>
+            <tr>
+                <td>The Shadow over Innsmouth</td>
+                <td>9788577151875</td>
+                <td>1936</td>
+                <td>33.20</td>
+                <td>H.P.</td>
+                <td>Lovecraft</td>
+                <td>1890</td>
+                <td>Visionary Publishing Company</td>
+            </tr>
+            <tr>
+                <td>Silmarillion</td>
+                <td>9782266014359</td>
+                <td>1977</td>
+                <td>32.71</td>
+                <td>J.R.R.</td>
+                <td>Tolkien</td>
+                <td>1892</td>
+                <td>Allen &amp; Unwin</td>
+            </tr>
+            <tr>
+                <td>Unfinished Tales of N&uacute;menor and Middle-earth</td>
+                <td>9780048231796</td>
+                <td>1980</td>
+                <td>39.90</td>
+                <td>J.R.R.</td>
+                <td>Tolkien</td>
+                <td>1892</td>
+                <td>Allen &amp; Unwin</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 </html>
