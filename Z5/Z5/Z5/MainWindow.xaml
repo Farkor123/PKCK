@@ -26,7 +26,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <TextBox Text="{Binding pathToXMl, Mode=OneWay }" Grid.Column="4" Grid.Row="2" >
+        <TextBox Text="{Binding PathToXML, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="4" Grid.Row="2" >
             <TextBox.DataContext>
                 <ViewModel:GUIViewModel/>
             </TextBox.DataContext>
