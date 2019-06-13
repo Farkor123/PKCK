@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Model
+﻿namespace Model
 {
     // NOTE: Generated code may require at least .NET Framework 4.5 or .NET Core/Standard 2.0.
     /// <remarks/>
@@ -25,14 +21,8 @@ namespace Model
         [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://data.example.com")]
         public technicalData technicalData
         {
-            get
-            {
-                return this.technicalDataField;
-            }
-            set
-            {
-                this.technicalDataField = value;
-            }
+            get => technicalDataField;
+            set => technicalDataField = value;
         }
 
         /// <remarks/>
@@ -40,14 +30,8 @@ namespace Model
         [System.Xml.Serialization.XmlArrayItemAttribute("writer", IsNullable = false)]
         public writersListWriter[] writersList
         {
-            get
-            {
-                return this.writersListField;
-            }
-            set
-            {
-                this.writersListField = value;
-            }
+            get => writersListField;
+            set => writersListField = value;
         }
 
         /// <remarks/>
@@ -55,28 +39,16 @@ namespace Model
         [System.Xml.Serialization.XmlArrayItemAttribute("publisher", IsNullable = false)]
         public publishersListPublisher[] publishersList
         {
-            get
-            {
-                return this.publishersListField;
-            }
-            set
-            {
-                this.publishersListField = value;
-            }
+            get => publishersListField;
+            set => publishersListField = value;
         }
 
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayItemAttribute("book", IsNullable = false)]
         public booksBook[] booksList
         {
-            get
-            {
-                return this.booksListField;
-            }
-            set
-            {
-                this.booksListField = value;
-            }
+            get => booksListField;
+            set => booksListField = value;
         }
     }
 }

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ViewModel;
 
 namespace Z5
 {
@@ -23,6 +24,7 @@ namespace Z5
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new GUIViewModel();
         }
     }
 }

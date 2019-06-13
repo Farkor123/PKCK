@@ -1,9 +1,10 @@
-﻿<Window x:Class="Z5.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Z5"
+        xmlns:ViewModel="clr-namespace:ViewModel;assembly=ViewModel" x:Class="Z5.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -25,9 +26,17 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <DataGrid Grid.Column="5" Grid.Row="7">
-
-        </DataGrid>
+        <TextBox Text="{Binding pathToXMl, Mode=OneWay }" Grid.Column="4" Grid.Row="2" >
+            <TextBox.DataContext>
+                <ViewModel:GUIViewModel/>
+            </TextBox.DataContext>
+        </TextBox>
+        <Button x:Name="Browse" Content="Browse" Command="{Binding getXML}" Grid.Column="4" Grid.Row="3" >
+            <Button.DataContext>
+                <ViewModel:GUIViewModel/>
+            </Button.DataContext>
+        </Button>
+        <DataGrid Grid.Column="5" Grid.Row="7"/>
     </Grid>
 
 </Window>
