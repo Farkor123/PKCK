@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ViewModel;
 
-namespace View
+namespace View2
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,8 +23,8 @@ namespace View
     {
         public MainWindow()
         {
-            InitializeComponent();
             DataContext = new GUIViewModel();
+            InitializeComponent();
         }
     }
 }
