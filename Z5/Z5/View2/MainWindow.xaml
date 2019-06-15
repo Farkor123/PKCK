@@ -23,20 +23,31 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
         <TextBox Text="{Binding Mode=TwoWay,Path=PathToXML,UpdateSourceTrigger=PropertyChanged}" Grid.Column="4" Grid.Row="2" />
         <TextBox Text="{Binding Mode=TwoWay,Path=PathToSchema,UpdateSourceTrigger=PropertyChanged}" Grid.Column="4" Grid.Row="3" />
-        <TextBox Text="{Binding Mode=TwoWay,Path=PathToTransform,UpdateSourceTrigger=PropertyChanged}" Grid.Column="4" Grid.Row="4" />
+        <TextBox Text="{Binding Mode=TwoWay,Path=PathToTransform,UpdateSourceTrigger=PropertyChanged}" Grid.Column="4" Grid.Row="6" />
+        <TextBox Text="{Binding Mode=TwoWay,Path=PathToTransformInput,UpdateSourceTrigger=PropertyChanged}" Grid.Column="4" Grid.Row="7" />
+        <TextBox Text="{Binding Mode=TwoWay,Path=PathToTransformOutput,UpdateSourceTrigger=PropertyChanged}" Grid.Column="4" Grid.Row="8" />
 
         <Button x:Name="XML" Content="XML" Command="{Binding getXML}" Grid.Column="3" Grid.Row="2" />
         <Button x:Name="Schema" Content="Schema" Command="{Binding getSchema}" Grid.Column="3" Grid.Row="3" />
-        <Button x:Name="Transform" Content="Transform" Command="{Binding getTransform}" Grid.Column="3" Grid.Row="4" />
 
-        <Button x:Name="Show" Content="Show" Command="{Binding getSchema}" Grid.Column="5" Grid.Row="2" />
-        <Button x:Name="ValidateSchema" Content="Validate schema" Command="{Binding getSchema}" Grid.Column="5" Grid.Row="3" />
-        <Button x:Name="RunTransforM" Content="Run transform" Command="{Binding getTransform}" Grid.Column="5" Grid.Row="4" />
+
+        <Button x:Name="Show" Content="Show" Command="{Binding show}" Grid.Column="5" Grid.Row="2" />
+        <Button x:Name="ValidateSchema" Content="Validate schema" Command="{Binding validate}" Grid.Column="5" Grid.Row="3" />
+
+        <TextBlock Text="Transform" Grid.Column="4" Grid.Row="5" HorizontalAlignment="Center"/>
+        <Button x:Name="RunTransform" Content="Run transform" Command="{Binding transform}" Grid.Column="5" Grid.Row="6" />
+        <Button x:Name="Transform" Content="Transform" Command="{Binding getTransform}" Grid.Column="3" Grid.Row="6" />
+        <Button x:Name="TransformInput" Content="Transform input" Command="{Binding getTransformInput}" Grid.Column="3" Grid.Row="7" />
+        <Button x:Name="TransformOutput" Content="Transform output" Command="{Binding getTransformOutput}" Grid.Column="3" Grid.Row="8" />
+       
         <DataGrid Grid.Column="5" Grid.Row="7"/>
     </Grid>
 </Window>

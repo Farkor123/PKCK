@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Logic;
+using System;
 using System.ComponentModel;
 using System.Windows.Input;
 
@@ -18,12 +19,16 @@ namespace ViewModel
         private string pathToXML;
         private string pathToSchema;
         private string pathToTransform;
+        private string pathToTransformInput;
+        private string pathToTransformOutput;
 
         public ICommand getXML { get; }
         public ICommand getTransform { get; }
+        public ICommand getTransformInput { get; }
+        public ICommand getTransformOutput { get; }
         public ICommand getSchema { get; }
         public ICommand validate { get; }
-        public ICommand show { get}
+        public ICommand show { get; }
         public ICommand transform { get; }
 
         public string PathToXML
@@ -55,12 +60,35 @@ namespace ViewModel
                 RaisePropertyChanged("PathToTransform");
             }
         }
+
+        public string PathToTransformInput
+        {
+            get => pathToTransformInput;
+            set
+            {
+                pathToTransformInput = value;
+                RaisePropertyChanged("PathToTransformInput");
+            }
+        }
+        public string PathToTransformOutput
+        {
+            get => pathToTransformOutput; set
+            {
+                pathToTransformOutput = value;
+                RaisePropertyChanged("PathToTransformOutput");
+            }
+        }
         #endregion
+
         public GUIViewModel()
         {
             getXML = new RelayCommand(GetXML);
             getTransform = new RelayCommand(GetTransform);
+            getTransformOutput = new RelayCommand(GetTransformOutput);
+            getTransformInput = new RelayCommand(GetTransformInput);
             getSchema = new RelayCommand(GetSchema);
+            transform = new RelayCommand(Transform);
+
         }
 
         private void GetXML()
@@ -74,6 +102,19 @@ namespace ViewModel
         private void GetTransform()
         {
             PathToTransform = WindowPathGeter.Value.GetPath("xsl");
+        }
+        private void GetTransformInput()
+        {
+            PathToTransformInput = WindowPathGeter.Value.GetPath("xml");
+        }
+        private void GetTransformOutput()
+        {
+            PathToTransformOutput = WindowPathGeter.Value.GetPath();
+        }
+
+        private void Transform()
+        {
+            RunXSLT.Transform(PathToTransformInput, PathToTransformOutput, PathToTransform);
         }
     }
 }

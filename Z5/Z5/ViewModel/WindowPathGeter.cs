@@ -8,7 +8,7 @@ namespace ViewModel
 {
     public class WindowPathGeter
     {
-        public string GetPath(string extension = ".xml")
+        public string GetPath(string extension = "")
         {
             OpenFileDialog window = new OpenFileDialog()
             {
