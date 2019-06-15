@@ -2,7 +2,7 @@
 using System.IO;
 using System.Xml.Serialization;
 
-namespace Data
+namespace Logic
 {
     public class Serialization
     {

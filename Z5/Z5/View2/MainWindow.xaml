@@ -13,6 +13,7 @@
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="20"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -25,10 +26,17 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <TextBox Text="{Binding Mode=TwoWay,Path=PathToXML,UpdateSourceTrigger=PropertyChanged, IsAsync=True}" Grid.Column="4" Grid.Row="2" />
-        <TextBox Grid.Column="4" Grid.Row="3" />
-        <Button x:Name="Browse" Content="Browse" Command="{Binding getXML}" Grid.Column="4" Grid.Row="4" >
-        </Button>
+        <TextBox Text="{Binding Mode=TwoWay,Path=PathToXML,UpdateSourceTrigger=PropertyChanged}" Grid.Column="4" Grid.Row="2" />
+        <TextBox Text="{Binding Mode=TwoWay,Path=PathToSchema,UpdateSourceTrigger=PropertyChanged}" Grid.Column="4" Grid.Row="3" />
+        <TextBox Text="{Binding Mode=TwoWay,Path=PathToTransform,UpdateSourceTrigger=PropertyChanged}" Grid.Column="4" Grid.Row="4" />
+
+        <Button x:Name="XML" Content="XML" Command="{Binding getXML}" Grid.Column="3" Grid.Row="2" />
+        <Button x:Name="Schema" Content="Schema" Command="{Binding getSchema}" Grid.Column="3" Grid.Row="3" />
+        <Button x:Name="Transform" Content="Transform" Command="{Binding getTransform}" Grid.Column="3" Grid.Row="4" />
+
+        <Button x:Name="Show" Content="Show" Command="{Binding getSchema}" Grid.Column="5" Grid.Row="2" />
+        <Button x:Name="ValidateSchema" Content="Validate schema" Command="{Binding getSchema}" Grid.Column="5" Grid.Row="3" />
+        <Button x:Name="RunTransforM" Content="Run transform" Command="{Binding getTransform}" Grid.Column="5" Grid.Row="4" />
         <DataGrid Grid.Column="5" Grid.Row="7"/>
     </Grid>
 </Window>
