@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View2"
         xmlns:ViewModel="clr-namespace:ViewModel;assembly=ViewModel" x:Class="View2.MainWindow"
+        xmlns:Converters="clr-namespace:ViewModel;assembly=ViewModel"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Converters:bookBookPublisherConverter x:Key="bookBookPublisherConverter"/>
+        <Converters:bookBookPublisherConverter x:Key="PublisherConverter" />
+        <Converters:bookBookWriterConverter x:Key="WriterConverter" />
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -52,14 +58,14 @@
         <Button x:Name="TransformOutput" Content="Transform output" Command="{Binding getTransformOutput}" Grid.Column="3" Grid.Row="8" />
         <Button x:Name="SaveAss" Content="Save as" Command="{Binding saveXML}" Grid.Column="3" Grid.Row="11" />
 
-        <DataGrid Grid.Column="4" Grid.Row="9" AlternationCount = "2" AutoGenerateColumns="False" ItemsSource="{Binding Path=Books, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+        <DataGrid Grid.Column="4" Grid.Row="9" AutoGenerateColumns="False" ItemsSource="{Binding Path=Books, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ISBN" Binding="{Binding  Path=bookIsbn}" />
                 <DataGridTextColumn Header="Title" Binding="{Binding  Path=bookTitle}" />
                 <DataGridTextColumn Header="Publish data" Binding="{Binding  Path=bookDateOfPublish}" />
                 <DataGridTextColumn Header="Price" Binding="{Binding  Path=bookPrice}"/>
-                <DataGridTextColumn Header="WriterId" Binding="{Binding  Path=bookWriter.writerID}"/>
-                <DataGridTextColumn Header="PublisherId" Binding="{Binding  Path=bookPublisher.publisherID}"/>
+                <DataGridTextColumn Header="WriterId" Binding="{Binding  Path=bookWriter, Converter={StaticResource WriterConverter}}"/>
+                <DataGridTextColumn Header="PublisherId" Binding="{Binding Path=bookPublisher, Converter={StaticResource PublisherConverter}}"/>
             </DataGrid.Columns>
         </DataGrid>
 

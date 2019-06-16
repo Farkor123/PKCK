@@ -498,7 +498,7 @@
     public partial class bookBookWriter
     {
 
-        private string writerIDField;
+        private string writerIDField = "no id";
 
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType = "IDREF")]

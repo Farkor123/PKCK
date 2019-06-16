@@ -104,11 +104,9 @@ namespace ViewModel
             {
                 writers = value;
                 RaisePropertyChanged("Writers");
-                RaisePropertyChanged("WritersIds");
             }
         }
 
-        public BindingList<string> WritersIds { get => writersIds; set => writersIds = value; }
         public ObservableCollection<publisher> Publishers
         {
             get => publishers; set
@@ -117,10 +115,6 @@ namespace ViewModel
                 RaisePropertyChanged("Publishers");
             }
         }
-
-        private BindingList<string> writersIds = new BindingList<string>();
-
-
         #endregion
 
         public GUIViewModel()
@@ -155,7 +149,7 @@ namespace ViewModel
 
         private void GetTransformOutput()
         {
-            PathToTransformOutput = WindowPathGeter.Value.SaveFile("");
+            PathToTransformOutput = WindowPathGeter.Value.SaveFile();
         }
 
         private void Transform()
