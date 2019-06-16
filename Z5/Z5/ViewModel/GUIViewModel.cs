@@ -1,5 +1,7 @@
 ﻿using Logic;
+using Model;
 using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Input;
 
@@ -21,6 +23,8 @@ namespace ViewModel
         private string pathToTransform;
         private string pathToTransformInput;
         private string pathToTransformOutput;
+        private ObservableCollection<booksBook> books;
+        private ObservableCollection<writersListWriter> writers;
 
         public ICommand getXML { get; }
         public ICommand getTransform { get; }
@@ -78,6 +82,26 @@ namespace ViewModel
                 RaisePropertyChanged("PathToTransformOutput");
             }
         }
+
+        public ObservableCollection<booksBook> Books
+        {
+            get => books;
+            set
+            {
+                books = value;
+                RaisePropertyChanged("Books");
+            }
+        }
+        public ObservableCollection<writersListWriter> Writers
+        {
+            get => writers; set
+            {
+                writers = value;
+                RaisePropertyChanged("Writers");
+            }
+        }
+
+
         #endregion
 
         public GUIViewModel()
@@ -88,6 +112,7 @@ namespace ViewModel
             getTransformInput = new RelayCommand(GetTransformInput);
             getSchema = new RelayCommand(GetSchema);
             transform = new RelayCommand(Transform);
+            show = new RelayCommand(Show);
 
         }
 
@@ -115,6 +140,15 @@ namespace ViewModel
         private void Transform()
         {
             RunXSLT.Transform(PathToTransformInput, PathToTransformOutput, PathToTransform);
+        }
+
+        private void Show()
+        {
+            books Books = Serialization.DeserializeFile(PathToXML);
+            this.Books = new ObservableCollection<booksBook>(Books.booksList);
+            Writers = new ObservableCollection<writersListWriter>(Books.writersList);
+
+
         }
     }
 }
