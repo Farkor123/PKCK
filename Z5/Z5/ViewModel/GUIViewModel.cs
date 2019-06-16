@@ -1,8 +1,10 @@
-﻿using Logic;
-using Model;
+﻿using Data;
+using Logic;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Windows.Input;
 
 namespace ViewModel
@@ -17,14 +19,17 @@ namespace ViewModel
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName_));
         }
 
+        private books oldBooks;
+
         #region DataContex
         private string pathToXML;
         private string pathToSchema;
         private string pathToTransform;
         private string pathToTransformInput;
         private string pathToTransformOutput;
-        private ObservableCollection<booksBook> books;
-        private ObservableCollection<writersListWriter> writers;
+        private ObservableCollection<book> books = new ObservableCollection<book>();
+        private ObservableCollection<writer> writers = new ObservableCollection<writer>();
+        private ObservableCollection<publisher> publishers = new ObservableCollection<publisher>();
 
         public ICommand getXML { get; }
         public ICommand getTransform { get; }
@@ -34,6 +39,7 @@ namespace ViewModel
         public ICommand validate { get; }
         public ICommand show { get; }
         public ICommand transform { get; }
+        public ICommand saveXML { get; }
 
         public string PathToXML
         {
@@ -83,7 +89,7 @@ namespace ViewModel
             }
         }
 
-        public ObservableCollection<booksBook> Books
+        public ObservableCollection<book> Books
         {
             get => books;
             set
@@ -92,14 +98,27 @@ namespace ViewModel
                 RaisePropertyChanged("Books");
             }
         }
-        public ObservableCollection<writersListWriter> Writers
+        public ObservableCollection<writer> Writers
         {
             get => writers; set
             {
                 writers = value;
                 RaisePropertyChanged("Writers");
+                RaisePropertyChanged("WritersIds");
             }
         }
+
+        public BindingList<string> WritersIds { get => writersIds; set => writersIds = value; }
+        public ObservableCollection<publisher> Publishers
+        {
+            get => publishers; set
+            {
+                publishers = value;
+                RaisePropertyChanged("Publishers");
+            }
+        }
+
+        private BindingList<string> writersIds = new BindingList<string>();
 
 
         #endregion
@@ -113,6 +132,7 @@ namespace ViewModel
             getSchema = new RelayCommand(GetSchema);
             transform = new RelayCommand(Transform);
             show = new RelayCommand(Show);
+            saveXML = new RelayCommand(SaveXML);
 
         }
 
@@ -132,9 +152,10 @@ namespace ViewModel
         {
             PathToTransformInput = WindowPathGeter.Value.GetPath("xml");
         }
+
         private void GetTransformOutput()
         {
-            PathToTransformOutput = WindowPathGeter.Value.GetPath();
+            PathToTransformOutput = WindowPathGeter.Value.SaveFile("");
         }
 
         private void Transform()
@@ -145,10 +166,31 @@ namespace ViewModel
         private void Show()
         {
             books Books = Serialization.DeserializeFile(PathToXML);
-            this.Books = new ObservableCollection<booksBook>(Books.booksList);
-            Writers = new ObservableCollection<writersListWriter>(Books.writersList);
+            oldBooks = Books;
+            Writers = new ObservableCollection<writer>(Books.writersList);
+            this.Books = new ObservableCollection<book>(Books.booksList);
+            Publishers = new ObservableCollection<publisher>(Books.publishersList);
+        }
 
+        private void SaveXML()
+        {
+            string path = WindowPathGeter.Value.SaveFile("xml");
+            if (path == "")
+            {
+                return;
+            }
 
+            if (oldBooks == null)
+            {
+                return;
+            }
+
+            books Books = oldBooks;
+            Books.publishersList = Publishers.ToArray();
+            Books.writersList = Writers.ToArray();
+            Books.booksList = books.ToArray();
+
+            Serialization.SerializeToFile(path, Books);
         }
     }
 }

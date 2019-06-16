@@ -24,5 +24,22 @@ namespace ViewModel
             else
                 return window.FileName;
         }
+
+        public string SaveFile(string extension = "")
+        {
+            SaveFileDialog window = new SaveFileDialog()
+            {
+                Filter = string.Format("Dynamic Library File(*{0})| *{0}", extension)
+            };
+            window.ShowDialog();
+            if (window.FileName.Length == 0)
+            {
+                MessageBox.Show("No files selected");
+                return "";
+            }
+
+            else
+                return window.FileName;
+        }
     }
 }

@@ -27,6 +27,8 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
@@ -48,21 +50,32 @@
         <Button x:Name="Transform" Content="Transform" Command="{Binding getTransform}" Grid.Column="3" Grid.Row="6" />
         <Button x:Name="TransformInput" Content="Transform input" Command="{Binding getTransformInput}" Grid.Column="3" Grid.Row="7" />
         <Button x:Name="TransformOutput" Content="Transform output" Command="{Binding getTransformOutput}" Grid.Column="3" Grid.Row="8" />
+        <Button x:Name="SaveAss" Content="Save as" Command="{Binding saveXML}" Grid.Column="3" Grid.Row="11" />
 
-
-        <DataGrid Grid.Column="4" Grid.Row="9" ItemsSource="{Binding Books, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+        <DataGrid Grid.Column="4" Grid.Row="9" AlternationCount = "2" AutoGenerateColumns="False" ItemsSource="{Binding Path=Books, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
             <DataGrid.Columns>
-                <DataGridTemplateColumn Header="Writer">
-                    <DataGridTemplateColumn.CellEditingTemplate>
-                        <DataTemplate>
-                            <ComboBox ItemsSource="{Binding Writers}">
-                                <ComboBox.DataContext>
-                                    <ViewModel:GUIViewModel/>
-                                </ComboBox.DataContext>
-                            </ComboBox>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellEditingTemplate>
-                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="ISBN" Binding="{Binding  Path=bookIsbn}" />
+                <DataGridTextColumn Header="Title" Binding="{Binding  Path=bookTitle}" />
+                <DataGridTextColumn Header="Publish data" Binding="{Binding  Path=bookDateOfPublish}" />
+                <DataGridTextColumn Header="Price" Binding="{Binding  Path=bookPrice}"/>
+                <DataGridTextColumn Header="WriterId" Binding="{Binding  Path=bookWriter.writerID}"/>
+                <DataGridTextColumn Header="PublisherId" Binding="{Binding  Path=bookPublisher.publisherID}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <DataGrid Grid.Column="4" Grid.Row="10" AlternationCount = "2" AutoGenerateColumns="False" ItemsSource="{Binding  Path=Writers, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding  Path=writerID}"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding  Path=name}"/>
+                <DataGridTextColumn Header="Surname" Binding="{Binding  Path=surname}"/>
+                <DataGridTextColumn Header="Birth year" Binding="{Binding  Path=writerBirthYear}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <DataGrid Grid.Column="4" Grid.Row="11" AlternationCount = "2" AutoGenerateColumns="False" ItemsSource="{Binding  Path=Publishers, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding  Path=publisherID}"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding Path=publisherName}"/>
             </DataGrid.Columns>
         </DataGrid>
 
