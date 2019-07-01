@@ -14,6 +14,7 @@ namespace Logic
 
             try
             {
+                settings = new XmlReaderSettings();
                 foreach (string schemaPath in schemaPaths)
                 {
 
@@ -27,11 +28,21 @@ namespace Logic
             catch (Exception e)
             {
                 XMLValidateCallback("Invalid schema " + e.Message);
+                return;
             }
 
 
             XmlReader reader = XmlReader.Create(xmlPath, settings);
-            while (reader.Read()) { }
+            try
+            {
+                while (reader.Read()) { }
+            }
+            catch (Exception e)
+            {
+                XMLValidateCallback("Invalid xml:  " + e.Message);
+                return;
+            }
+
             reader.Close();
             XMLValidateCallback("Valid schema and XML");
 
