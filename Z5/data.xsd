@@ -21,7 +21,7 @@
   <!--complexType=person will also be used in writer section-->
   <xs:complexType name="identity">
     <xs:sequence>
-      <xs:element name="name" type="xs:token"/>
+      <xs:element name="namedddd" type="xs:token"/>
       <xs:element name="surname" type="xs:token"/>
     </xs:sequence>
   </xs:complexType>

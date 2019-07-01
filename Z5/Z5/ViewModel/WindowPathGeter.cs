@@ -17,7 +17,7 @@ namespace ViewModel
             window.ShowDialog();
             if (window.FileName.Length == 0)
             {
-                MessageBox.Show("No files selected");
+                ShowMessageBox("No files selected");
                 return "";
             }
 
@@ -35,7 +35,7 @@ namespace ViewModel
             window.ShowDialog();
             if (window.FileName.Length == 0)
             {
-                MessageBox.Show("No files selected");
+                ShowMessageBox("No files selected");
                 return Array.Empty<string>();
             }
 
@@ -52,7 +52,7 @@ namespace ViewModel
             window.ShowDialog();
             if (window.FileName.Length == 0)
             {
-                MessageBox.Show("No files selected");
+                ShowMessageBox("No files selected");
                 return "";
             }
 
@@ -62,6 +62,7 @@ namespace ViewModel
 
         public void ShowMessageBox(string message)
         {
+            Console.WriteLine(message);
             MessageBox.Show(message);
         }
     }

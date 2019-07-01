@@ -15,15 +15,20 @@ namespace Logic
             try
             {
                 settings = new XmlReaderSettings();
+                settings.ValidationType = ValidationType.Schema;
+                settings.ValidationFlags |= XmlSchemaValidationFlags.ProcessSchemaLocation;
+                settings.ValidationFlags |= XmlSchemaValidationFlags.ReportValidationWarnings;
                 foreach (string schemaPath in schemaPaths)
                 {
 
                     settings.Schemas.Add(null, schemaPath);
                 }
-
+                /*
                 settings.ValidationEventHandler += new ValidationEventHandler(
                     (sender, args) => XMLValidateCallback(args.Message)
-                );
+                );*/
+
+                settings.Schemas.Compile();
             }
             catch (Exception e)
             {
