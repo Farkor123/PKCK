@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:data="http://data.example.com"
+           targetNamespace="http://writer.example.com"
+           xmlns:writer="http://writer.example.com">
+  <xs:import namespace="http://data.example.com"
+             schemaLocation="data.xsd"/>
+
+  <xs:element name="writersList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="writer:writer" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="writer">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="data:identity">
+          <xs:sequence>
+            <xs:element name="writerBirthYear" type="xs:gYear"/>
+          </xs:sequence>
+          <xs:attribute name="writerID" type="xs:ID"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+
+
+</xs:schema>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://data.example.com"
+           xmlns:data="http://data.example.com">
+  <!--define element=technicalData of complexType
+      books.xml:7-23-->
+  <xs:element name="technicalData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="data:author" maxOccurs="unbounded"/>
+        <xs:element ref="data:lastModificationDate"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:unique name="uniqueIndexes">
+      <xs:selector xpath="data:author"/>
+      <xs:field xpath="@authorIndexNumber"/>
+    </xs:unique>
+  </xs:element>
+  <!--define element=author of type student-->
+  <xs:element name="author" type="data:student"/>
+  <!--complexType=person will also be used in writer section-->
+  <xs:complexType name="identity">
+    <xs:sequence>
+      <xs:element name="namedddd" type="xs:token"/>
+      <xs:element name="surname" type="xs:token"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="student">
+    <xs:complexContent>
+      <xs:extension base="data:identity">
+        <xs:sequence>
+          <xs:element name="authorIndexNumber">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:pattern value="[0-9]{6}"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+        </xs:sequence>
+        <xs:attribute name="authorID" type="xs:ID"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+
+
+  <xs:element name="lastModificationDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="lastModificationDay" type="xs:gDay"/>
+        <xs:element name="lastModificationMonth" type="xs:gMonth"/>
+        <xs:element name="lastModificationYear" type="xs:gYear"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

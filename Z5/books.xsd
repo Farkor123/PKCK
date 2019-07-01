@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:data="http://data.example.com"
+           xmlns:writer="http://writer.example.com"
+           xmlns:publisher="http://publisher.example.com">
+
+  <xs:import namespace="http://data.example.com"
+             schemaLocation="data.xsd"/>
+  <xs:import namespace="http://writer.example.com"
+             schemaLocation="writer.xsd"/>
+  <xs:import namespace="http://publisher.example.com"
+             schemaLocation="publisher.xsd"/>
+
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      XML Schema for second exercise of PKCK
+    </xs:documentation>
+  </xs:annotation>
+
+
+  <xs:element name="books">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="data:technicalData"/>
+        <xs:element ref="writer:writersList"/>
+        <xs:element ref="publisher:publishersList"/>
+        <xs:element ref="booksList"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="booksList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="book" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="book">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="bookWriter">
+          <xs:complexType>
+            <xs:attribute name="writerID" type="xs:IDREF"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="bookPublisher">
+          <xs:complexType>
+            <xs:attribute name="publisherID" type="xs:IDREF"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="bookTitle" type="xs:string"/>
+        <xs:element name="bookIsbn">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="[0-9]{13}"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="bookDateOfPublish" type="xs:gYear"/>
+        <xs:element name="bookPrice" type="xs:decimal"/>
+      </xs:sequence>
+      <xs:attribute name="bookID" type="xs:ID"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
