@@ -1,7 +1,6 @@
 ﻿using Data;
 using Logic;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
@@ -27,6 +26,7 @@ namespace ViewModel
         private string pathToTransform;
         private string pathToTransformInput;
         private string pathToTransformOutput;
+        private string[] schemas;
         private ObservableCollection<book> books = new ObservableCollection<book>();
         private ObservableCollection<writer> writers = new ObservableCollection<writer>();
         private ObservableCollection<publisher> publishers = new ObservableCollection<publisher>();
@@ -127,6 +127,7 @@ namespace ViewModel
             transform = new RelayCommand(Transform);
             show = new RelayCommand(Show);
             saveXML = new RelayCommand(SaveXML);
+            validate = new RelayCommand(ValidateXML);
 
         }
 
@@ -136,7 +137,9 @@ namespace ViewModel
         }
         private void GetSchema()
         {
-            PathToSchema = WindowPathGeter.Value.GetPath("xsd");
+            schemas = WindowPathGeter.Value.GetMultiplePath("xsd");
+            PathToSchema = string.Join(";",schemas);
+
         }
         private void GetTransform()
         {
@@ -185,6 +188,11 @@ namespace ViewModel
             Books.booksList = books.ToArray();
 
             Serialization.SerializeToFile(path, Books);
+        }
+
+        private void ValidateXML()
+        {
+            Validate.ValidateXml(pathToXML, schemas, WindowPathGeter.Value.ShowMessageBox);
         }
     }
 }
